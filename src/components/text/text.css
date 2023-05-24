@@ -1,0 +1,16 @@
+.select{
+    text-decoration: underline;
+    font-weight: 600;
+    padding: 0 2px;
+    background-color: #b6b6b6;
+}
+.error{
+    background-color: rgba(199, 10, 10, 0.71);
+}
+.text{
+    width: 765px;
+    margin: 0 auto;
+    padding-top: 85px;
+    padding-bottom: 65px;
+    height: 80px;
+}

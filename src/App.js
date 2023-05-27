@@ -44,6 +44,14 @@ function App() {
         handleTimerStop()
     }
 
+    const changeText = (type) => {
+        setType(type)
+        setError(0)
+        setIsError(false)
+        setPosition(0)
+        handleTimerStop()
+    }
+
     const onKeydown = (event) => {
         if (isActive === false) { handleTimerStart() }
         const isSymbol = checkSymbol(event.key)
@@ -72,7 +80,7 @@ function App() {
 
   return (
     <section className="App">
-      <Header error={error} time={time} speed={getSpeedIndo(time,position)} setType={setType}/>
+      <Header error={error} time={time} speed={getSpeedIndo(time,position)} changeText={changeText}/>
       <Text text={text} position={position} isError={isError} isLoading={isLoading}/>
       <Keyboard letter={text[position]}/>
       <Hands letter={text[position]}/>
